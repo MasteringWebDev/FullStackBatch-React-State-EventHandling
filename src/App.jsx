@@ -16,6 +16,18 @@ function App() {
     setCount(count + 1)
   }
 
+  function increment5() {
+    setCount((prevCount) => prevCount + 1)
+    setCount((prevCount) => prevCount + 1)
+    setCount((prevCount) => prevCount + 1)
+    setCount((prevCount) => prevCount + 1)
+    setCount((prevCount) => prevCount + 1)
+  }
+
+  function decrement() {
+    setCount(count - 1)
+  }
+
   return (
     <>
       {/* <input type="text" onInput={showAlert} />
@@ -24,6 +36,8 @@ function App() {
 
       <h1>{count}</h1>
       <button onClick={increment}>Increment</button>
+      <button onClick={increment5}>Increment 5</button>
+      <button onClick={decrement}>Decrement</button>
     </>
   )
 }
@@ -40,6 +54,7 @@ export default App
   # State ***
     - Data that belongs to that component
     - Component will only re-render if the state was changed using stateHandler
+      - stateHandler are asynchronous in nature
     - Syntax:
       - Declare: const [state, stateHandler] = useState(defaultValue)
 
