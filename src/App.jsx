@@ -58,6 +58,6 @@ export default App
     - Syntax:
       - Declare: const [state, stateHandler] = useState(defaultValue)
 
-  # Hooks: Specicial functions provided by React to perform a specific task
+  # Hooks: Special functions provided by React to perform a specific task
     - useState(): Declare state in a functional component
 */
